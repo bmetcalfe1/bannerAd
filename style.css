@@ -136,7 +136,7 @@ body, body * {
   animation-delay: 0;
 }
 
-#expanded-panel {
+#expanded-banner {
   display: none;
   position: fixed;
   z-index: 999;
@@ -148,7 +148,7 @@ body, body * {
   background: rgba(0,0,0,0.6);
 }
 
-#expanded-panel img {
+#expanded-banner img {
   max-width: 65%;
   max-height: 65%;
   margin: 5%;

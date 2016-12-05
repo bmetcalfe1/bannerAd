@@ -1,6 +1,6 @@
 function myOverFunction() {
-    console.log("Yoo");
-    var bigPanel = document.getElementById("expanded-panel");
+    console.log("...opening expandable banner...");
+    var bigPanel = document.getElementById("expanded-banner");
 	bigPanel.style.display = "inline"; 
 
 	window.onclick = function(event) {
