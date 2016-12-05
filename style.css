@@ -87,11 +87,12 @@ body, body * {
   width: 300px;
   height: 250px;
   background: #EEE;
+  float: right;
 }
 
 #banner img {
   position:absolute;
-  left:0;
+  right:0;
 }
 
 #banner img {
@@ -139,4 +140,21 @@ body, body * {
   -moz-animation-delay: 0;
   -o-animation-delay: 0;
   animation-delay: 0;
+}
+
+img:hover + #expanded-panel {
+  transition-duration: 2s;
+  transition-delay: 0.5s;
+}
+
+#expanded-panel {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1200px;
+  height: 1000px;
+}
+
+.main-img-5 {
+  visibility: hidden;
 }
