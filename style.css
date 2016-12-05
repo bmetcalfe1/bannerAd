@@ -158,7 +158,25 @@ body, body * {
 
 #expanded-panel img {
   /** Pad the lightbox image */
-  max-width: 90%;
+  max-width: 80%;
   max-height: 80%;
-  margin-top: 2%;
+  margin: 5%;
+}
+
+.btn {
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 24px;
+  background: #c6cc0e;
+  padding: 20px 20px 20px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+}
+
+.btn:hover {
+  background: #5dd422;
+  text-decoration: none;
 }

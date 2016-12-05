@@ -10,17 +10,23 @@
 <body>
 
   <div class="modal">
+
     <div id="banner" onmouseover="setTimeout(myOverFunction, 3000)">
       <img class="panel main-img-1" src="300x250_ps4.jpg" />
       <img class="panel main-img-2" src="300x250_3.jpg" />
       <img class="panel main-img-3" src="300x250_2.jpg" />
       <img class="panel main-img-4" src="300x250_1.jpg" />
     </div>
+
     <div id="expanded-panel">
+    <!-- be careful about adding more divs here -->
       <a href="https://www.playstation.com/en-us/games/watch-dogs-ps4/">
-        <img class="panel main-img-5" src="960x600_JOIN.jpg" />
-      </a>
+      <img class="panel main-img-5" src="960x600_JOIN.jpg" /></a>
+      <form action="https://www.playstation.com/en-us/games/watch-dogs-ps4/#buynow" method="get">
+        <button class="btn">Buy Now</button>
+      </form>
     </div>
+
   </div>
 
   <script src="logic.js"></script>
