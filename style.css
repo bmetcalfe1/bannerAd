@@ -1,13 +1,7 @@
 
 body, body * {
-/*  vertical-align: baseline;
-  border: 0 none;
-  outline: 0;
-  padding: 0;*/
   margin: 0;
-/*  font-family: Arial, sans-serif;
-  font-size: 9pt;
-  color: #333;*/
+  font-family: Arial, sans-serif;
 }
 
 @-webkit-keyframes bannerFadeInOut {
@@ -143,9 +137,7 @@ body, body * {
 }
 
 #expanded-panel {
-  /** Default lightbox to hidden */
   display: none;
-  /** Position and style */
   position: fixed;
   z-index: 999;
   width: 100%;
@@ -153,30 +145,49 @@ body, body * {
   text-align: center;
   top: 0;
   left: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.6);
 }
 
 #expanded-panel img {
-  /** Pad the lightbox image */
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 65%;
+  max-height: 65%;
   margin: 5%;
 }
 
 .btn {
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 24px;
-  background: #c6cc0e;
-  padding: 20px 20px 20px 20px;
-  text-decoration: none;
+  border-radius: 4px;
+  background-color: #f4511e;
   border: none;
-  border-radius: 5px;
+  color: #FFFFFF;
   text-align: center;
-  align-items: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
-.btn:hover {
-  background: #5dd422;
-  text-decoration: none;
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
 }
