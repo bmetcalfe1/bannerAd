@@ -1,4 +1,5 @@
 function myOverFunction() {
-    // document.getElementById("expanded-panel");
     console.log("Yoo");
+    var bigPanel = document.getElementById("expanded-panel");
+	bigPanel.style.display = "inline";  
 }

@@ -142,19 +142,13 @@ body, body * {
   animation-delay: 0;
 }
 
-img:hover + #expanded-panel {
-  transition-duration: 2s;
-  transition-delay: 0.5s;
-}
-
 #expanded-panel {
+  display: none;
   position: absolute;
+  margin-left: auto;
+  margin-right: auto;
   left: 0px;
   top: 0px;
   width: 1200px;
   height: 1000px;
-}
-
-.main-img-5 {
-  visibility: hidden;
 }
